@@ -1,22 +1,22 @@
 # Homepage Design Submission — Arcwell Dental Studio
 
-> Copy the email below. Replace `[YOUR NAME]`, `[LIVE_DEMO_URL]`, and check the GitHub link before sending.
+> Submitted via the Teraleads assessment form (https://wkf.ms/3Mb3tfT) — see `monday-form-submission.md` for exact field values. This letter is for reference / in case a direct email is ever needed.
 
 ---
 
-**Subject:** Homepage Design Submission — Full-Arch Dental Implants (Arcwell Dental Studio)
+**Subject:** Homepage Design Assessment Submission — Senior Product UX/UI Designer (Arcwell Dental Studio)
 
 ---
 
-Dear [Client / Hiring Team Name],
+Dear Teraleads Hiring Team,
 
-Please find my homepage design submission for a premium dental clinic specialising in full-arch dental implants (All-on-4 and full-mouth restoration).
+Please find my homepage design submission for the full-arch dental implant clinic assessment (All-on-4 and full-mouth restoration).
 
-**Live prototype (homepage):**  
-[LIVE_DEMO_URL]/dental.html
+**Live prototype (homepage):**
+https://arcwellky.netlify.app/
 
-**Design guide (colours, typography, CSS tokens):**  
-[LIVE_DEMO_URL]/design-guide.html
+**Design guide (colours, typography, CSS tokens):**
+https://arcwellky.netlify.app/design-guide.html
 
 **Source code (GitHub):**  
 https://github.com/BeiraMar1111/test/tree/main/amtpilot-dental
@@ -74,7 +74,7 @@ Rather than a generic blue-and-white dental template, I developed a warm editori
 | Interactive design guide (colours, type, CSS tokens) | ✅ `/design-guide.html` |
 | UX strategy & IA documentation | ✅ In repo `/docs` |
 | Source code on GitHub | ✅ Linked above |
-| Figma file | ⚠️ Prototype built in code; design guide serves as handoff spec |
+| Figma file | ✅ https://www.figma.com/design/JjYLnz1n2yzi6yo8y45onE/Halden-—-Homepage?node-id=26-17 |
 
 ---
 
@@ -104,11 +104,11 @@ Stock photography is used for concept demonstration and would be replaced with l
 
 Thank you for your time and consideration. I would welcome the opportunity to discuss the design decisions and walk through the prototype with you.
 
-Kind regards,  
-**[YOUR NAME]**  
-[Your email]  
-[Your portfolio / LinkedIn — optional]
+Kind regards,
+**Kateryna Yaroshuk**
+kiaroshuk@gmail.com
+Portfolio: https://kateryna-yaroshuk2026.netlify.app
 
 ---
 
-*Submitted as part of the Homepage Design exercise — Full-Arch Dental Implants.*
+*Submitted as part of the Homepage Design exercise — Full-Arch Dental Implants, Senior Product UX/UI Designer assessment.*

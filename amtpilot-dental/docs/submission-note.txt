@@ -1,0 +1,15 @@
+Arcwell Dental Studio — positioned as a full-arch implant SPECIALIST, not a general practice with an implants page added on. I reviewed 10 competitor clinics (ClearChoice, Nuvia, Carolina Implants, Smileloc, Fusion, Spring Hope, Perth Dental Implant Centre, several Harley St clinics, Sofia Implant Centre, Smilo) — most share blue/white templates, price-anchored heroes, and fabricated stats. I built against that.
+
+UX/journey: the page answers one patient question per section, in the order they actually ask it — What is this? -> Is this me? -> Can I trust them? -> What happens? -> What will it look like? -> What about my concerns? -> Next step — ending in a low-friction consultation form with a one-field intent qualifier.
+
+Conversion + marketing: dual hero CTA (book now vs. "see how treatment works" for not-yet-ready visitors), price kept out of the hero and placed in FAQ — trust before numbers — plus a sticky mobile CTA. No fabricated statistics, review counts, or awards: credentials are honest placeholders a real clinic fills before launch.
+
+UI/visual hierarchy: warm cream/sage/bronze palette instead of the category's default clinical blue; Cormorant Garamond display + Instrument Sans body on a documented type scale; 4px spacing grid with named tokens for consistent hierarchy.
+
+Creativity: specialist-only brand positioning, objection-mapped testimonials (delay/shame, fear of surgery, price trust — not generic praise), interactive journey tabs and a before/after drag slider instead of static content walls.
+
+Execution in 4 hours: built a small documented design system (tokens + components) alongside the homepage, so the deliverable is dev-ready, not just a static comp.
+
+Figma: https://www.figma.com/design/JjYLnz1n2yzi6yo8y45onE/Halden-—-Homepage?node-id=26-17
+Live: https://arcwellky.netlify.app/ | Design guide: https://arcwellky.netlify.app/design-guide.html
+Source + research docs: https://github.com/BeiraMar1111/test/tree/main/amtpilot-dental/docs
