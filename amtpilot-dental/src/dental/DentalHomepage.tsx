@@ -203,10 +203,15 @@ export function DentalHomepage() {
                 Fixed teeth that feel like yours again.
               </h1>
               <p className="hero__lead">
-                Arcwell focuses exclusively on All-on-4 and full-mouth implant restoration — for adults
-                ready to move beyond failing teeth, loose dentures, or the daily anxiety of hiding their
-                smile.
+                Arcwell is a dedicated full-arch implant studio — All-on-4, All-on-6, and full-mouth
+                restoration for adults who want fixed, natural-looking teeth and a clear plan they can
+                trust before committing.
               </p>
+              <ul className="hero__benefits">
+                <li>Specialists in full-arch work only — not general dentistry</li>
+                <li>Written treatment plan before you decide</li>
+                <li>Same clinical team from consultation to final fit</li>
+              </ul>
               <div className="hero__actions">
                 <a href="#consultation" className="btn btn--primary">
                   Book a private consultation
@@ -226,7 +231,7 @@ export function DentalHomepage() {
                   <BrandImage {...ASSETS.heroPatient} loading="eager" />
                 </div>
                 <div className="hero__image hero__image--secondary">
-                  <BrandImage {...ASSETS.heroClinical} />
+                  <BrandImage {...ASSETS.heroClinical} loading="eager" />
                 </div>
               </div>
               <div className="hero__stat-card">
@@ -404,8 +409,9 @@ export function DentalHomepage() {
           <div className="container results__grid">
             <div className="results__content" data-reveal>
               <p className="overline">Real transformations</p>
-              <h2 id="results-heading" className="section-title">
-                Results that look like you — on a good day, every day.
+              <h2 id="results-heading" className="section-title section-title--results">
+                Results that look like you —
+                <span className="section-title__subline">on a good day, every day.</span>
               </h2>
               <p className="section-lead">
                 Drag to compare. Every case is individual — your consultation will explore what is
@@ -422,9 +428,12 @@ export function DentalHomepage() {
                 afterSrc={ASSETS.after.src}
                 beforeAlt={ASSETS.before.alt}
                 afterAlt={ASSETS.after.alt}
+                beforeLabel="Before"
+                afterLabel="After"
+                crop="smile"
               />
               <p className="results__demo-note">
-                Illustrative 3D-style demo — replace with real anonymised patient cases before launch.
+                Stock photography for concept demo — replace with real anonymised patient cases before launch.
               </p>
             </div>
           </div>
@@ -433,11 +442,35 @@ export function DentalHomepage() {
             {ASSETS.caseStudies.map((item) => (
               <figure key={item.caption} className="results__thumb">
                 <div className="results__thumb-image">
-                  <BrandImage src={item.src} alt={item.alt} />
+                  <BrandImage src={item.src} alt={item.alt} crop={item.crop} />
                 </div>
                 <figcaption>{item.caption}</figcaption>
               </figure>
             ))}
+          </div>
+        </section>
+
+        {/* ── Mid-page CTA ── */}
+        <section className="mid-cta" aria-labelledby="mid-cta-heading">
+          <div className="container mid-cta__inner" data-reveal>
+            <div className="mid-cta__copy">
+              <p className="overline">Ready to explore your options?</p>
+              <h2 id="mid-cta-heading" className="section-title section-title--compact">
+                Find out if full-arch implants are right for you.
+              </h2>
+              <p className="section-lead">
+                A private consultation includes an oral assessment, candid discussion of your goals, and —
+                where appropriate — a written plan with timeline and investment. No pressure to proceed.
+              </p>
+            </div>
+            <div className="mid-cta__actions">
+              <a href="#consultation" className="btn btn--primary btn--full">
+                Book a private consultation
+              </a>
+              <a href="tel:[phone]" className="btn btn--ghost btn--full">
+                Or call [Phone number]
+              </a>
+            </div>
           </div>
         </section>
 
@@ -446,7 +479,7 @@ export function DentalHomepage() {
           <div className="container approach__grid">
             <div className="approach__visual" data-reveal>
               <div className="approach__image">
-                <BrandImage {...ASSETS.suite} />
+                <BrandImage {...ASSETS.suite} loading="eager" />
               </div>
             </div>
             <div className="approach__content" data-reveal>
@@ -485,7 +518,7 @@ export function DentalHomepage() {
           <div className="container clinician__grid">
             <div className="clinician__portrait" data-reveal>
               <div className="clinician__image">
-                <BrandImage {...ASSETS.clinician} />
+                <BrandImage {...ASSETS.clinician} loading="eager" />
               </div>
             </div>
             <div className="clinician__content" data-reveal>
@@ -682,9 +715,9 @@ export function DentalHomepage() {
         <div className="container site-footer__legal">
           <p>&copy; {new Date().getFullYear()} Arcwell Dental Studio. All rights reserved.</p>
           <nav aria-label="Legal">
+            <a href="/design-guide.html">Design guide</a>
             <a href="#">Privacy policy</a>
             <a href="#">Terms</a>
-            <a href="#">Cookie policy</a>
           </nav>
         </div>
       </footer>

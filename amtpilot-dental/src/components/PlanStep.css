@@ -1,0 +1,121 @@
+.plan-step {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.plan-step:last-child {
+  border-bottom: none;
+}
+
+.plan-step__header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: start;
+  padding: 14px 16px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.plan-step__header:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.plan-step__header:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: -2px;
+}
+
+.plan-step__index {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.12);
+  display: grid;
+  place-items: center;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.plan-step__summary {
+  min-width: 0;
+}
+
+.plan-step__top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.plan-step__top-row strong {
+  font-size: 15px;
+}
+
+.plan-step__leistung {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 4px;
+}
+
+.plan-step__frist {
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.plan-step__chevron {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.1);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.plan-step__body {
+  padding: 0 16px 16px 56px;
+  animation: fadeIn 0.2s ease;
+}
+
+.plan-step__hint {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.08);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.plan-step__section-title {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 6px;
+}
+
+.plan-step__documents {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+.plan-step__documents li + li {
+  margin-top: 4px;
+}
+
+@media (max-width: 480px) {
+  .plan-step__body {
+    padding-left: 16px;
+  }
+}

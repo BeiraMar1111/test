@@ -8,6 +8,7 @@ type BeforeAfterSliderProps = {
   afterAlt?: string
   beforeLabel?: string
   afterLabel?: string
+  crop?: 'face' | 'smile' | 'clinical' | 'environment'
 }
 
 export function BeforeAfterSlider({
@@ -17,6 +18,7 @@ export function BeforeAfterSlider({
   afterAlt = 'After restoration',
   beforeLabel = 'Before treatment',
   afterLabel = 'After restoration',
+  crop = 'smile',
 }: BeforeAfterSliderProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [position, setPosition] = useState(50)
@@ -57,12 +59,12 @@ export function BeforeAfterSlider({
       aria-label="Before and after comparison slider. Drag to compare."
     >
       <div className="ba-slider__after">
-        <BrandImage src={afterSrc} alt={afterAlt} className="ba-slider__photo" loading="eager" />
+        <BrandImage src={afterSrc} alt={afterAlt} className="ba-slider__photo" crop={crop} loading="eager" />
         <span className="ba-slider__label ba-slider__label--after">{afterLabel}</span>
       </div>
 
       <div className="ba-slider__before" style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}>
-        <BrandImage src={beforeSrc} alt={beforeAlt} className="ba-slider__photo" loading="eager" />
+        <BrandImage src={beforeSrc} alt={beforeAlt} className="ba-slider__photo" crop={crop} loading="eager" />
         <span className="ba-slider__label ba-slider__label--before">{beforeLabel}</span>
       </div>
 
