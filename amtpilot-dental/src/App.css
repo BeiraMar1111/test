@@ -1,0 +1,55 @@
+.app {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+}
+
+.app__main {
+  flex: 1;
+  width: min(720px, 100%);
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100dvh - 180px);
+}
+
+.chat-panel__messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
+}
+
+.app__footer {
+  position: sticky;
+  bottom: 0;
+  background: var(--color-white);
+  border-top: 1px solid var(--color-border);
+}
+
+.app__reset {
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text-medium);
+  padding: 10px 16px;
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+}
+
+.app__reset:hover {
+  background: var(--color-teal-light);
+  color: var(--color-navy);
+}
+
+.app__reset:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: -2px;
+}
