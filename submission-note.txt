@@ -1,0 +1,14 @@
+Arcwell Dental Studio — a full-arch implant *specialist* brand, not a general dental practice with an implants page bolted on. That positioning call drove every UI decision.
+
+UX/journey: Hero -> "Is this for you?" (problem recognition from lived experience, not symptoms) -> named treatment paths (All-on-4/All-on-6/full-mouth) -> interactive 5-step journey -> before/after -> clinical approach (de-risking) -> same-team-throughout -> 3 testimonials, each mapped to a different objection (shame/delay, fear of surgery, price trust) -> FAQ led by the #1 anxiety (candidacy/bone loss) -> low-friction consultation form with a one-field intent qualifier.
+
+Conversion: dual hero CTA (committed + not-ready-yet visitor), sticky mobile CTA, no fabricated stats (bracketed placeholders instead of invented numbers — appropriate for a regulated, high-trust medical decision).
+
+UI: warm cream/sage/bronze palette instead of default clinical blue; Cormorant Garamond display + Instrument Sans body on a documented type scale; 4px spacing grid with named tokens for consistent hierarchy.
+
+Execution: built a small documented design system (tokens + components) alongside the homepage, not just a static comp, so it's dev-ready within the 4-hour window.
+
+Figma: https://www.figma.com/design/JjYLnz1n2yzi6yo8y45onE/Halden-—-Homepage?node-id=26-17
+Live prototype: https://arcwellky.netlify.app/
+Design guide: https://arcwellky.netlify.app/design-guide.html
+Source: https://github.com/BeiraMar1111/test
